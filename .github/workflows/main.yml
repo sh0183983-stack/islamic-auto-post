@@ -1,0 +1,19 @@
+name: Baraka AI Agent
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+
+jobs:
+  agent:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Agent Started
+        run: |
+          echo "Baraka AI Agent is running..."
+          date

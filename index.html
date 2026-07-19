@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sohibanir Dawat</title>
+    <meta
+      name="description"
+      content="Sohibanir Dawat shares Islamic reminders, dawah content, and community updates."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f1e7;
+        --card: #ffffff;
+        --ink: #17352f;
+        --muted: #5c6f69;
+        --accent: #0f7b64;
+        --accent-dark: #095744;
+        --gold: #d2a047;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(210, 160, 71, 0.22), transparent 32rem),
+          linear-gradient(135deg, #f6f1e7 0%, #edf8f4 100%);
+      }
+
+      main {
+        width: min(100%, 980px);
+        margin: 0 auto;
+        padding: 4rem 1.25rem;
+      }
+
+      .hero {
+        display: grid;
+        gap: 2rem;
+        align-items: center;
+        min-height: calc(100vh - 8rem);
+      }
+
+      .card {
+        padding: clamp(2rem, 6vw, 4rem);
+        border: 1px solid rgba(15, 123, 100, 0.14);
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.88);
+        box-shadow: 0 24px 70px rgba(9, 87, 68, 0.13);
+        backdrop-filter: blur(12px);
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        gap: 0.5rem;
+        align-items: center;
+        margin: 0 0 1rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        color: var(--accent-dark);
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 999px;
+        background: var(--gold);
+        content: "";
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.4rem, 8vw, 5.5rem);
+        line-height: 0.95;
+        letter-spacing: -0.06em;
+      }
+
+      .lead {
+        max-width: 42rem;
+        margin: 1.5rem 0 0;
+        color: var(--muted);
+        font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+        line-height: 1.7;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 3.25rem;
+        padding: 0.85rem 1.25rem;
+        border-radius: 999px;
+        font-weight: 800;
+        text-decoration: none;
+      }
+
+      .button.primary {
+        color: #fff;
+        background: var(--accent);
+      }
+
+      .button.secondary {
+        color: var(--accent-dark);
+        border: 1px solid rgba(15, 123, 100, 0.28);
+        background: #fff;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .feature {
+        padding: 1rem;
+        border-radius: 18px;
+        background: rgba(15, 123, 100, 0.08);
+      }
+
+      .feature strong {
+        display: block;
+        margin-bottom: 0.35rem;
+      }
+
+      .feature span {
+        color: var(--muted);
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="card">
+          <p class="eyebrow">Islamic reminders</p>
+          <h1 id="page-title">Sohibanir Dawat</h1>
+          <p class="lead">
+            A home for dawah updates, beneficial reminders, and automated Islamic posts for the community.
+          </p>
+          <div class="actions" aria-label="Primary links">
+            <a class="button primary" href="./README.md">Read about the project</a>
+            <a class="button secondary" href="https://github.com/" rel="noreferrer">View on GitHub</a>
+          </div>
+          <div class="features" aria-label="Site highlights">
+            <div class="feature">
+              <strong>Reminders</strong>
+              <span>Short, shareable Islamic messages prepared for consistent publishing.</span>
+            </div>
+            <div class="feature">
+              <strong>Automation</strong>
+              <span>Repository workflows can support scheduled posting and future updates.</span>
+            </div>
+            <div class="feature">
+              <strong>Community</strong>
+              <span>A clear landing page keeps GitHub Pages visitors from seeing a blank screen.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
